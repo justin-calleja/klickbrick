@@ -1,0 +1,19 @@
+[tool.poetry]
+authors = ["Justin <calleja.justin@gmail.com>"]
+description = ""
+name = "klickbrick"
+readme = "README.md"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+arrow = "^1.0.3"
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
+[tool.poetry.scripts]
+klickbrick = "klickbrick.cli:main"
