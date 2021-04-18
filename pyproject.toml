@@ -1,12 +1,14 @@
 [tool.poetry]
 authors = ["Justin <calleja.justin@gmail.com>"]
 description = ""
-name = "klickbrick"
+name = "justinc-klickbrick"
+packages = [
+  {include = "klickbrick", from = "src"},
+]
 readme = "README.md"
-version = "0.1.0"
+version = "0.1.1"
 
 [tool.poetry.dependencies]
-arrow = "^1.0.3"
 python = "^3.9"
 
 [tool.poetry.dev-dependencies]
