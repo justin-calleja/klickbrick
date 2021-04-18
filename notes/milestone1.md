@@ -280,3 +280,9 @@ python3 -m pip install --index-url https://test.pypi.org/simple/ justinc-klickbr
 # and this uninstalls it:
 python3 -m pip uninstall justinc-klickbrick
 ```
+
+To commit to this repo and not trigger the CI build use `[ci skip]` in commit message (probably needs to be at end of first line), e.g.
+
+```
+git commit -m 'test update [ci skip]'
+```
