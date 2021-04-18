@@ -28,7 +28,7 @@ jobs:
         script: poetry publish -r testpypi
         skip_cleanup: true
         on:
-          branch: master
+          branch: main
           python: '3.7.4'
           tags: true
       if: tag IS present
