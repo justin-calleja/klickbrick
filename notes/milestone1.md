@@ -270,3 +270,13 @@ TODO: need to figure out the nuances of travis config e.g.
 - what's the extent of what you can do in `if:`?
 - I imagine I need to tag the commit myself and it won't pick up a version bump in `toml` file and do the tagging automatically?
 
+## Test after CI deploy to test pypi
+
+After confirming that `klickbrick` script is uninstalled on my system:
+
+```
+python3 -m pip install --index-url https://test.pypi.org/simple/ justinc-klickbrick
+# now running klickbrick works
+# and this uninstalls it:
+python3 -m pip uninstall justinc-klickbrick
+```
